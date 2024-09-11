@@ -1,0 +1,95 @@
+/*  NOTES
+
+// <weight>: Use a value from 200 to 900
+
+.source-sans-3-<uniquifier> {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+
+
+*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  Temporary Styles */
+
+/* {
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+} 
+
+html, 
+body {
+    border: none;
+} 
+
+ h1,h2,h3,h4,h5,h6,p, a {
+    border: 2px solid rgb(179, 84, 84);
+} */
+
+
+/* Re-usable Utiity Classes  */
+
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+
+.padded    { padding: 5%;    }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+
+.margin-b-0 { margin-bottom: 0; }
+
+
+.bg-light    { background-color: #a1a7a9;  }
+.bg-featured { background-color: #018ca2;  }
+.bg-dark     { background-color: #24282B;  }
+
+.light-text { color: white; } 
+
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+/* General typography & universal styles  */
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header & Footer */
+
+/* Images & Background Images */
+
+.bg-plant { background-image: url('/images/plant.jpg'); }
+.bg-plant-light { background-image: url('/images/plant-light.png'); }
+.bg-placeholder { background-image: url('/images/placeholder.png'); }
+.bg-meeting { background-image: url('/images/meeting.jpg'); }
+.bg-leaf { background-image: url('/images/leaf.jpg'); }
+.bg-leaf-light { background-image: url('/images/leaf-light.png'); }
+
+.bg-image {
+    background-color: brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
