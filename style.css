@@ -54,14 +54,14 @@ body {
 .padded-1  { padding: 1rem;  }
 .padded-2  { padding: 2rem;  }
 
-.padded-t { padding-top: 5%; }
-.padded-b { padding-top: 5%; }
-.padded-l { padding-top: 5%; }
-.padded-r { padding-top: 5%; }
+.padded-t { padding-top: 5%;    }
+.padded-b { padding-bottom: 5%; }
+.padded-l { padding-left: 5%;   }
+.padded-r { padding-right: 5%;  }
 
-.padded-0 { padding: 0; }
+.padded-0   { padding: 0;         }
 .padded-b-0 { padding-bottom: 0%; }
-.margin-b-0 { margin-bottom: 0; }
+.margin-b-0 { margin-bottom: 0;   }
 
 
 .bg-brown    { background-color: #d3b4a2;  }
@@ -148,11 +148,9 @@ footer a:hover {
 /* Images & Background Images */
 
 .bg-plant { background-image: url('/images/plant.jpg'); }
-.bg-plant-light { background-image: url('/images/plant-light.png'); }
 .bg-placeholder { background-image: url('/images/placeholder.png'); }
 .bg-meeting { background-image: url('/images/meeting.jpg'); }
 .bg-leaf { background-image: url('/images/leaf.jpg'); }
-.bg-leaf-light { background-image: url('/images/leaf-light.png'); }
 
 .bg-image {
     background-color: rgb(240,240,240);
@@ -165,5 +163,21 @@ footer a:hover {
     max-width: 3rem;
     opacity: 0.8;
     margin: 1rem 0;
+
+}
+
+/* Media Queries - SM max-width approx 768px */
+
+@media(max-width: 48em) {
+
+    .center-sm {text-align: center; }
+
+    .flex-flip-sm { flex-direction: column-reverse; }
+
+    .bg-plant { background-image: url('/images/plant-light.png')}
+
+    .bg-leaf { 
+        background-image: url('/images/leaf-light.png');
+        background-position: 17% 50%; }
 
 }
