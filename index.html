@@ -11,14 +11,17 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
+        <!----- Font Awesome ----->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
         <!----- Google Fonts ----->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-        <!----- Font Awesome ----->
-        
+      
         <!----- Our Stylesheet ----->
 
         <link rel="stylesheet" href="/style.css">
@@ -29,61 +32,64 @@
          <!----- Logo & Navigation ----->
 
         <header class="grid">
-            <div class="col-6_sm-12 padded">
+            <div class="col-6_sm-12-middle padded-0 center-sm">
 
                 <h1>The Design Collective.</h1>
             </div>
 
-                <nav class="col-6_sm-12 right padded">
-                    <a href="#">Why Us</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
+                <nav class="col-6_sm-12-middle right padded-0 center-sm">
+                    <a href="#why-us">Why Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </nav>            
         </header>
 
          <!----- About Banner ----->
 
-        <section class="bg-image bg-plant tall-70 grid-middle">
-            <div class="col-8_sm-10 padded">
+        <section class="bg-image bg-plant tall-70 padded grid-middle">
+            <div class="col-8_sm-10">
                 <h2>Web design & business that grows with your business</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt provident corrupti id! Nobis impedit ipsum consequuntur harum qui nesciunt tenetur, sapiente odio hic vel voluptas tempora aperiam ducimus est ab?</p>
             </div>
+        </section>
+
+        <!----- Newsletter ----->
+
+        <section class="center padded-2 light-text bg-dark">
+            
+                <h4>Subscribe to our newsletter</h4>
+                    <a href="#" class="button">Sign up here</a>
             
         </section>
 
-         <!----- Newsletter ----->
+        <!----- Icon Section ----->
 
-        <section class="center padded light-text bg-dark">
-            <div>
-                <p>Sign up for our newsletter.</p>
-                <a href="#">Call to Action Button</a>
-            </div>
-        </section>
-
-         <!----- Icon Section ----->
-
-        <section class="grid-middle padded">
-            <div class="col-12 center">
+        <section class="grid padded center icon" id="why-us">
+            <div class="col-12 center padded-b">
                 <h2>Why Choose Us?</h2>
             </div>
 
-            <div class="col-3">
+            <div class="col-3_sm-6_xs-12">
+                <img src="/images/icons/flash.png">
                 <h4>Lightning Fast</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, eligendi nesciunt. Cum voluptatum non temporibus quaerat dolore ducimus. Exercitationem porro modi eaque quos, quas inventore tempore fugit nobis eius tempora!</p>
             </div>
 
-            <div class="col-3">
+            <div class="col-3_sm-6_xs-12">
+                <img src="/images/icons/idea.svg">
                 <h4>Strategic Perspective</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, eligendi nesciunt. Cum voluptatum non temporibus quaerat dolore ducimus. Exercitationem porro modi eaque quos, quas inventore tempore fugit nobis eius tempora!</p>
             </div>
 
-            <div class="col-3">
+            <div class="col-3_sm-6_xs-12">
+                <img src="/images/icons/seo.png">
                 <h4>SEO</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, eligendi nesciunt. Cum voluptatum non temporibus quaerat dolore ducimus. Exercitationem porro modi eaque quos, quas inventore tempore fugit nobis eius tempora!</p>
             </div>
             
-            <div class="col-3">
+            <div class="col-3_sm-6_xs-12">
+                <img src="/images/icons/dollar.svg">
                 <h4>Modern E-commerce</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, eligendi nesciunt. Cum voluptatum non temporibus quaerat dolore ducimus. Exercitationem porro modi eaque quos, quas inventore tempore fugit nobis eius tempora!</p>
             </div>
@@ -91,12 +97,12 @@
 
          <!----- Agency Section ----->
 
-        <section class="grid padded bg-dark light-text">
-            <div class="col-6 bg-image bg-meeting padded-1 tall-50">
+        <section class="grid padded bg-green light-text">
+            <div class="col-7_sm-12 bg-image bg-meeting tall-50">
 
             </div>
 
-            <div class="col-6-middle padded">
+            <div class="col-5_sm-12-middle padded">
                 <h3>More than just another agency.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum atque eius, aspernatur neque temporibus similique possimus. Incidunt nam corrupti ratione, exercitationem repellendus in debitis minus, sapiente, dolorem deleniti facilis.</p>
             </div>
@@ -105,39 +111,38 @@
 
         <!----- IG CTA ----->
 
-        <div class="col-12-middle padded center">
-            <h3>Stay up to date.</h3>
-            <a href="#">Instagram</a>
-        </div>
+        <section class="bg-dark light-text padded center">
+            <h3>Stay up to date on Instagram</h3>
+            <a href="#" class="button">Instagram</a>
+        </section>
 
-        <!----- Services Section ----->
+        <!----- Services Banner----->
 
-        <section class="grid bg-image bg-leaf tall-60">
-
-            <div class="col-6-right"></div>
-            <div class="col-6-middle right padded">
-
-                <h3>Our Services</h3>
+        <section class="grid padded center bg-image bg-leaf tall-70 grid-right" id="services">
+            <div class="col-6_sm-8-middle right">
+           
+                <h2>Our Services</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dolores doloribus ex adipisci facilis dolorum. Labore odit vero ducimus tenetur facere fugit quis nemo. Dicta magni earum assumenda ad culpa.</p>
+
             </div>
 
         </section>
 
-        <!----- Get In Touch CTA ----->
+        <!----- Services Grid----->
 
-        <section class="grid bg-dark light-text padded">
+        <section class="grid padded">
             
-            <div class="col-4">
+            <div class="col-4_xs-12 padded">
                 <h3>Design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel doloremque odio amet hic inventore. Ullam accusamus qui temporibus nobis unde cupiditate a, animi vero voluptatem dignissimos quo numquam! Eius.</p>
             </div>
 
-            <div class="col-4">
+            <div class="col-4_xs-12 padded">
                 <h3>Build</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sunt quis impedit, minus enim explicabo doloremque facere ipsam hic eligendi numquam, sequi vitae ratione voluptate corporis nostrum qui laborum ullam.</p>
             </div>
 
-            <div class="col-4">
+            <div class="col-4_xs-12 padded">
 
                 <h3>Design & Build</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dolores doloribus ex adipisci facilis dolorum. Labore odit vero ducimus tenetur facere fugit quis nemo. Dicta magni earum assumenda ad culpa.</p>
@@ -145,28 +150,37 @@
 
         </section>
 
-        <!----- Websites of the Month ----->
+        <!----- Featured Websites ----->
 
-        <section class="grid">
-            <div class="col-12 center padded">
-                <h2>Websites of the month</h2>
+        <section class="padded bg-brown" id="projects">
+
+            <h2 class="center">Featured Projects</h2>
+            
+            <div class="grid">
+                <div class="col-5_sm-12-middle padded">
+                    <h3>Negroni Cocktail Bar</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae magni reprehenderit delectus facilis, perspiciatis laudantium sequi nam, odio sit, inventore excepturi amet cumque dolorem soluta eos repellat ad numquam vero?</p>
+                    <a href="#" class="button">Visit site</a>
+
+                </div>
+
+                <div class="col-7_sm-12-middle padded">
+                    <img src="/images/placeholder.png" alt="Negroni Cocktail Bar">
+
+                </div>
             </div>
 
-            <div class="col-6-middle padded">
-                <p>Negroni Cocktail Bar</p>
+            <div class="grid flex-flip-sm">
+                <div class="col-7_sm-12-middle padded">
+                    <img src="/images/placeholder.png" alt="Zen Studio">
 
-            </div>
+                </div>
 
-            <div class="col-6 bg-image bg-placeholder tall-50">
-
-            </div>
-
-            <div class="col-6 bg-image bg-placeholder tall-50">
-
-            </div>
-
-            <div class="col-6-middle padded">
-                <p>Zen Studio</p>
+                <div class="col-5_sm-12-middle padded">
+                    <h3>Zen Studio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi facilis praesentium in ut modi, ipsam iste alias. Tempore itaque harum velit dignissimos praesentium minus impedit ea, dolor id repudiandae!</p>
+                        <a href="#" class="button">Visit site</a>
+                </div>
 
             </div>
 
@@ -174,19 +188,25 @@
 
         <!----- Footer ----->
 
-        <footer class="bg-dark grid light-text">
-            <div class="col-6 padded">
-                <h2>LOGO.</h2>
-                <p>Address</p>
-                <p>Email</p>
+        <footer class="bg-dark grid light-text padded padded-b-0" id="contact">
+            <div class="col-6_sm-12 padded center-sm">
+                <h2 class="logo">LOGO.</h2>
+                <h3>Web Design & Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorum nesciunt harum, voluptatem sequi cupiditate illum similique dolores, eaque laboriosam incidunt libero accusamus tempora earum? Dolorem voluptas sequi ab id.</p>
             </div>
 
-            <div class="col-6-bottom right padded">
-                <p>Icons</p>
+            <div class="col-6_sm-12-bottom right padded center-sm">
+                <h3>Let's Connect</h3>
+                <nav>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </nav>
             </div>
 
-            <div class="col-12 sub-header center">
-                <p>Copyright 2024</p>
+            <div class="col-12 center padded-t">
+                <p class="sub-header">Copyright 2024</p>
             </div>
 
         </footer>

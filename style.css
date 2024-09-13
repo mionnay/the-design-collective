@@ -8,17 +8,21 @@
   font-weight: <weight>;
   font-style: normal;
 
-
-
 */
-
-
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+html { scroll-behavior: smooth; }
+
+[class*=grid] {
+    margin:0;
+}
+
+img { max-width: 100%; }
 
 /*  Temporary Styles */
 
@@ -50,12 +54,19 @@ body {
 .padded-1  { padding: 1rem;  }
 .padded-2  { padding: 2rem;  }
 
+.padded-t { padding-top: 5%; }
+.padded-b { padding-top: 5%; }
+.padded-l { padding-top: 5%; }
+.padded-r { padding-top: 5%; }
+
+.padded-0 { padding: 0; }
+.padded-b-0 { padding-bottom: 0%; }
 .margin-b-0 { margin-bottom: 0; }
 
 
-.bg-light    { background-color: #a1a7a9;  }
-.bg-featured { background-color: #018ca2;  }
-.bg-dark     { background-color: #24282B;  }
+.bg-brown    { background-color: #d3b4a2;  }
+.bg-green    { background-color: #9b9b81;  }
+.bg-dark     { background-color: #a2745c;  }
 
 .light-text { color: white; } 
 
@@ -69,6 +80,32 @@ body {
 
 body {
     font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    color: rgb(60,60,60);
+}
+
+h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 a {
@@ -76,7 +113,37 @@ a {
     text-decoration: none;
 }
 
+nav a {
+    padding: 0.25rem;
+}
+
+a:hover { color: #a2745c; }
+
+.button {
+    text-decoration: none;
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+}
+
+.bg-dark .button:hover {
+    color: #d3b4a2;
+}
+
 /* Header & Footer */
+
+header { padding: 2% 5%; }
+
+footer a:hover {
+    color: #d3b4a2;
+}
+
+.sub-header {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
 
 /* Images & Background Images */
 
@@ -88,8 +155,15 @@ a {
 .bg-leaf-light { background-image: url('/images/leaf-light.png'); }
 
 .bg-image {
-    background-color: brown;
+    background-color: rgb(240,240,240);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.icon img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+
 }
