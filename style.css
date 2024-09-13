@@ -170,7 +170,7 @@ footer a:hover {
 
 @media(max-width: 48em) {
 
-    .center-sm {text-align: center; }
+    .center-sm { text-align: center; }
 
     .flex-flip-sm { flex-direction: column-reverse; }
 
@@ -179,5 +179,7 @@ footer a:hover {
     .bg-leaf { 
         background-image: url('/images/leaf-light.png');
         background-position: 17% 50%; }
+
+    .darker-font { color: black; }
 
 }
