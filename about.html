@@ -1,0 +1,68 @@
+---
+layout: default
+banner_image: /images/plant.jpg
+team:
+ - name: Graham
+   title: Big Boss Coder
+   description: Started from the bottom, now he's here
+   profile_image: /images/graham.jpg
+ - name: Genevieve
+   title: Big Boss Designer
+   description: Started in the middle, now she's there
+   profile_image: /images/genevieve.jpg
+ - name: Griffin
+   title: Big Boss Developer
+   description: Started at the top, now he's everywhere
+   profile_image: /images/griffin.jpg
+about-video-id: _z4xNMe8cuE
+---
+
+<!----- Banner ----->
+
+<section class="tall-60 grid bg-green">
+    <div class="col-5-middle padded editable">
+        <h2>Meet our expanding team</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt provident corrupti id! Nobis impedit ipsum consequuntur harum qui nesciunt tenetur, sapiente odio hic vel voluptas tempora aperiam ducimus est ab?</p>
+    </div>
+    <div class="col-7 bg-image bg-plant" style="background-image: url('{{page.banner_image}}');">
+
+    </div>
+</section>
+
+<!----- Team Members ----->
+
+<section class="padded">
+    <div class="cap-width">
+
+    {% for person in page.team %}
+
+        <div class="grid alt-flip">
+            <div class="col-5 padded-2">
+                <img src="{{person.profile_image}}" class="profile-image">
+            </div>
+
+            <div class="col-7-middle padded-1">
+                <h3>Meet {{person.name}}</h3>
+                <h4>{{person.title}}</h4>
+                <p>{{person.description}}</p>
+            </div>
+
+        </div>
+
+    {% endfor %}
+    </div>
+</section>
+
+<!----- Team Video ----->
+
+<section class="padded bg-green center">
+
+    <h2 class="editable">Watch our team video</h2>
+    <p class="emphasis editable">featuring Queenie the tuxedo cat</p>
+    <div class="padded-1">
+        <div class='embed-container'>
+            <iframe src='https://www.youtube.com/embed/{{page.about-video-id}}' frameborder='0' allowfullscreen></iframe>
+        </div>
+    </div>
+
+</section>

@@ -75,6 +75,20 @@ body {
 .center { text-align: center; }
 .right  { text-align: right; }
 
+.cap-width { 
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cap-width-narrow { 
+    max-width: 900px;
+    margin: auto;
+}
+
+.alt-flip:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 
 /* General typography & universal styles  */
 
@@ -132,6 +146,11 @@ a:hover { color: #a2745c; }
     color: #d3b4a2;
 }
 
+.emphasis {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 /* Header & Footer */
 
 header { padding: 2% 5%; }
@@ -164,6 +183,28 @@ footer a:hover {
     opacity: 0.8;
     margin: 1rem 0;
 
+}
+
+.profile-image {border-radius: 100%;}
+
+/* Responsive Video */
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
 }
 
 /* Media Queries - SM max-width approx 768px */
