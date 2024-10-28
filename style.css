@@ -54,6 +54,9 @@ body {
 .padded-1  { padding: 1rem;  }
 .padded-2  { padding: 2rem;  }
 
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+
 .padded-t { padding-top: 5%;    }
 .padded-b { padding-bottom: 5%; }
 .padded-l { padding-left: 5%;   }
@@ -185,7 +188,14 @@ footer a:hover {
 
 }
 
+.right-arrow {
+    max-width: 2rem;
+    margin-left: 1rem;
+}
+
 .profile-image {border-radius: 100%;}
+
+.landscape { padding-bottom: 60%; }
 
 /* Responsive Video */
 
