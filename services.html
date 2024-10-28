@@ -1,7 +1,66 @@
 ---
 layout: default
+features:
+ - title: Beautiful Designs
+   description: Placeholder Project One
+   featured_image: /images/placeholder.png
+ - title: Optimized Builds
+   description: Placeholder Project One
+   featured_image: /images/placeholder.png
 ---
 
-<section>
-    SERVICES
+<section class="bg-image bg-leaf tall-70 padded grid-middle-right">
+    <div class="col-6_sm-10 editable right">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt provident corrupti id! Nobis impedit ipsum consequuntur harum qui nesciunt tenetur, sapiente odio hic vel voluptas tempora aperiam ducimus est ab?</p>
+    </div>
+</section>
+
+<section class="padded bg-green">
+    <div class="cap-width grid">
+    <div class="col-4_sm-12 padded-2">
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel doloremque odio amet hic inventore. Ullam accusamus qui temporibus nobis unde cupiditate a, animi vero voluptatem dignissimos quo numquam! Eius.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel doloremque odio amet hic inventore. Ullam accusamus qui temporibus nobis unde cupiditate a, animi vero voluptatem dignissimos quo numquam! Eius.</p>
+    </div>
+
+    <div class="col-4_sm-12 padded-2">
+        <h3>Build</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sunt quis impedit, minus enim explicabo doloremque facere ipsam hic eligendi numquam, sequi vitae ratione voluptate corporis nostrum qui laborum ullam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sunt quis impedit, minus enim explicabo doloremque facere ipsam hic eligendi numquam, sequi vitae ratione voluptate corporis nostrum qui laborum ullam.</p>
+    </div>
+
+    <div class="col-4_sm-12 padded-2">
+
+        <h3>Optimization</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dolores doloribus ex adipisci facilis dolorum. Labore odit vero ducimus tenetur facere fugit quis nemo. Dicta magni earum assumenda ad culpa.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dolores doloribus ex adipisci facilis dolorum. Labore odit vero ducimus tenetur facere fugit quis nemo. Dicta magni earum assumenda ad culpa.</p>
+    </div>
+    <div class="col-12 padded-1 center">
+        <a href="/contact" class="button">Get In Touch</a>
+    </div>
+    </div>
+</section>
+
+{% include newsletter-signup.html %}
+
+<section class="cap-width">
+
+    {% for item in page.features %}
+    
+    <div class="grid alt-flip">
+        <div class="col-5_sm-12-middle padded">
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+
+        </div>
+
+        <div class="col-7_sm-12-middle padded">
+            <img src="{{item.featured_image}}" alt="{{item.title}}">
+
+        </div>
+    </div>
+
+    {% endfor %}
+
 </section>
